@@ -1,0 +1,8 @@
+# Converting the JSON objects to print in Python
+import json
+# some JSON:
+x =  '{ "city":"Washington", "population":300000, "country":"US"}'
+# parse x:
+y = json.loads(x)
+# the result is a Python dictionary:
+print(y["city"])
