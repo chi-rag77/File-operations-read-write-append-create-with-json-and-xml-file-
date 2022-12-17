@@ -1,0 +1,11 @@
+COPY
+import pandas as pd
+
+data_dict = {
+  "city":"Washington", 
+  "population":300000, 
+  "country":"US"
+}
+
+df= pd.DataFrame.from_dict(data_dict, orient='index')
+df.to_excel('OUTPUTFILE.xlsx')
