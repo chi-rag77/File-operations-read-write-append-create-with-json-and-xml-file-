@@ -1,0 +1,12 @@
+COPY
+import csv
+rows=[]
+with open('sample4.csv') as inputfile:
+    csvreader = csv.reader(inputfile, delimiter=',')
+    # Extracting each data row one by one 
+    for row in csvreader: 
+        rows.append(row)
+
+# Printing out the first 5 rows 
+for row in rows[:5]: 
+    print(row)
