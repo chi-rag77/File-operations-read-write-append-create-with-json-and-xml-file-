@@ -1,0 +1,13 @@
+<nodedetails>
+  <name>SERVER-1</name>
+  <description/>
+  <numExecutors>SOME_NO_XX</numExecutors>
+  <mode>SOME_MODE_XX</mode>
+  <launcher class="xxxxx" plugin="xxxxx">
+    <hostname>128.0.0.1</hostname>
+    <portno>9900</portno>
+    <credentialsId>TESTID</credentialsId>
+    <maxNumRetries>3</maxNumRetries>
+  </launcher>
+  <label>somelabel</label>
+</nodedetails>
