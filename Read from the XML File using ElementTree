@@ -1,0 +1,10 @@
+COPY
+import xml.etree.ElementTree as ET
+tree = ET.parse("TEST.xml")
+root = tree.getroot()
+
+for item in root.iter('nodedetails'):
+    for name in item.iter("name"):
+        print (name.text)
+    for portno in item.iter("portno"):
+        print (portno.text)
