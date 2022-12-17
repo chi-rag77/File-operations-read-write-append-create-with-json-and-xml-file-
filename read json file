@@ -1,0 +1,13 @@
+import json
+import pandas as pd
+
+with open('file.json') as f:
+    data= json.loads(f.read())
+print(data)
+
+# We can do the same thing with pandas
+data_df = pd.read_json('file.json', orient='records')
+print(data_df)
+
+# To Pretty Print
+print(json.dumps(data, indent = 4, sort_keys=True))
