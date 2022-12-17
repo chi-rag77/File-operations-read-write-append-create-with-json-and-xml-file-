@@ -1,0 +1,14 @@
+COPY
+import json
+# Python Dictionary object:
+x = {
+  "city":"Washington", 
+  "population":300000, 
+  "country":"US"
+}
+
+# convert into JSON:
+y = json.dumps(x)
+
+# the result is a JSON string:
+print(y)
